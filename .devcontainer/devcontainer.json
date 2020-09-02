@@ -1,0 +1,13 @@
+{
+	"name": "Vapor",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+        "vknabel.vscode-swift-development-environment",
+        "kasik96.swift"
+	]
+}
