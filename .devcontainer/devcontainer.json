@@ -3,12 +3,21 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
+	"runArgs": [
+		"--cap-add=SYS_PTRACE",
+		"--security-opt",
+		"seccomp=unconfined"
+	],
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"lldb.adapterType": "bundled",
+		"lldb.executable": "/usr/bin/lldb",
+		"sde.languageservermode": "sourcekite",
+		"swift.path.sourcekite": "/usr/local/bin/sourcekite"
 	},
 	"extensions": [
         "vknabel.vscode-swift-development-environment",
-		"kasik96.swift",
+		"vadimcn.vscode-lldb",
 		"ms-azuretools.vscode-docker"
 	]
 }
