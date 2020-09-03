@@ -8,6 +8,7 @@
 	},
 	"extensions": [
         "vknabel.vscode-swift-development-environment",
-        "kasik96.swift"
+		"kasik96.swift",
+		"ms-azuretools.vscode-docker"
 	]
 }
