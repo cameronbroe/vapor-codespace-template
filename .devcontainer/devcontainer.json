@@ -12,12 +12,15 @@
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"lldb.adapterType": "bundled",
 		"lldb.executable": "/usr/bin/lldb",
-		"sde.languageservermode": "sourcekite",
-		"swift.path.sourcekite": "/usr/local/bin/sourcekite"
+		"sde.languageservermode": "sourcekit-lsp",
+		"sourcekit-lsp.serverPath": "/usr/bin/sourcekit-lsp"
 	},
 	"extensions": [
         "vknabel.vscode-swift-development-environment",
 		"vadimcn.vscode-lldb",
 		"ms-azuretools.vscode-docker"
+	],
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
 	]
 }
